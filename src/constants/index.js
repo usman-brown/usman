@@ -28,7 +28,7 @@ export const profile = {
   phone: "+92 349 6186700",
   phoneHref: "tel:+923496186700",
   resume: "/resume/Muhammad-Usman-CV.pdf",
-  portfolio: "https://usmandeveloper.lovestoblog.com/",
+  portfolio: "https://usman-brown.vercel.app/",
   availability: "Open to remote & on-site opportunities",
   tagline:
     "I build fast, scalable web applications, AI-powered automations and high-performance storefronts.",
@@ -40,14 +40,14 @@ export const socialLinks = [
   {
     id: "github",
     name: "GitHub",
-    label: "github.com/maing007",
-    url: "https://github.com/maing007",
+    label: "github.com/usman-brown",
+    url: "https://github.com/usman-brown",
   },
   {
     id: "linkedin",
     name: "LinkedIn",
-    label: "linkedin.com/in/muhammad-usman-web",
-    url: "https://www.linkedin.com/in/muhammad-usman-web",
+    label: "www.linkedin.com/in/usman-brown",
+    url: "https://www.linkedin.com/in/usman-brown",
   },
   {
     id: "leetcode",
@@ -347,7 +347,7 @@ export const projects = [
     initials: "PF",
     year: "2026",
     image: "/projects/portfolio.jpg",
-    link: "https://usmandeveloper.lovestoblog.com/",
+    link: "https://usman-brown.vercel.app/",
     note: "Live site",
   },
   {

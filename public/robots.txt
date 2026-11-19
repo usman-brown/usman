@@ -1,4 +1,4 @@
-# https://usmandeveloper.lovestoblog.com/
+# https://usman-brown.vercel.app/
 
 User-agent: *
 Allow: /
@@ -40,5 +40,5 @@ Allow: /
 User-agent: Amazonbot
 Allow: /
 
-Sitemap: https://usmandeveloper.lovestoblog.com/sitemap.xml
-Host: https://usmandeveloper.lovestoblog.com
+Sitemap: https://usman-brown.vercel.app/sitemap.xml
+Host: https://usman-brown.vercel.app

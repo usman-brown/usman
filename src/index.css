@@ -1,16 +1,47 @@
-@import url("https://fonts.googleapis.com/css2?family=Poppins:wght@100;200;300;400;500;600;700;800;900&display=swap");
-
 @tailwind base;
 @tailwind components;
 @tailwind utilities;
+
+html {
+  scroll-behavior: smooth;
+  scroll-padding-top: 88px;
+}
+
+body {
+  background-color: #050816;
+}
 
 * {
   margin: 0;
   padding: 0;
   box-sizing: border-box;
-  font-family: "Poppins", sans-serif;
-  scroll-behavior: smooth;
+  font-family: "Poppins", ui-sans-serif, system-ui, sans-serif;
   color-scheme: dark;
+}
+
+::selection {
+  background-color: #915eff;
+  color: #ffffff;
+}
+
+:focus-visible {
+  outline: 2px solid #915eff;
+  outline-offset: 2px;
+}
+
+/* Respect users who prefer less motion: stop long animations and smooth scroll */
+@media (prefers-reduced-motion: reduce) {
+  html {
+    scroll-behavior: auto;
+  }
+
+  *,
+  *::before,
+  *::after {
+    animation-duration: 0.01ms !important;
+    animation-iteration-count: 1 !important;
+    transition-duration: 0.01ms !important;
+  }
 }
 
 .hash-span {

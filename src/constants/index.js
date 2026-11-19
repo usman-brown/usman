@@ -15,15 +15,53 @@ import {
   git,
   figma,
   docker,
-  meta,
-  starbucks,
-  tesla,
   shopify,
-  carrent,
-  jobit,
-  tripguide,
   threejs,
 } from "../assets";
+
+export const profile = {
+  name: "Muhammad Usman",
+  firstName: "Usman",
+  role: "Full-Stack Developer & AI Engineer",
+  location: "Lahore, Punjab, Pakistan",
+  email: "usmansaleemprogramer@gmail.com",
+  phone: "+92 349 6186700",
+  phoneHref: "tel:+923496186700",
+  resume: "/resume/Muhammad-Usman-CV.pdf",
+  portfolio: "https://usmandeveloper.lovestoblog.com/",
+  availability: "Open to remote & on-site opportunities",
+  tagline:
+    "I build fast, scalable web applications, AI-powered automations and high-performance storefronts.",
+  summary:
+    "I'm a software engineer with 2.5+ years of hands-on experience across full-stack and hybrid web development. I specialise in building high-performing, scalable and visually polished products — from full websites, dashboards and custom WordPress/Shopify themes to Node.js backends and AI-driven automations. I care about clean, optimised code, Core Web Vitals and shipping work that generates real business results.",
+};
+
+export const socialLinks = [
+  {
+    id: "github",
+    name: "GitHub",
+    label: "github.com/maing007",
+    url: "https://github.com/maing007",
+  },
+  {
+    id: "linkedin",
+    name: "LinkedIn",
+    label: "linkedin.com/in/muhammad-usman-web",
+    url: "https://www.linkedin.com/in/muhammad-usman-web",
+  },
+  {
+    id: "leetcode",
+    name: "LeetCode",
+    label: "leetcode.com/u/usmandev007",
+    url: "https://leetcode.com/u/usmandev007/",
+  },
+  {
+    id: "email",
+    name: "Email",
+    label: profile.email,
+    url: `mailto:${profile.email}`,
+  },
+];
 
 export const navLinks = [
   {
@@ -32,7 +70,15 @@ export const navLinks = [
   },
   {
     id: "work",
-    title: "Work",
+    title: "Experience",
+  },
+  {
+    id: "skills",
+    title: "Skills",
+  },
+  {
+    id: "projects",
+    title: "Projects",
   },
   {
     id: "contact",
@@ -42,224 +88,543 @@ export const navLinks = [
 
 const services = [
   {
-    title: "Web Developer",
+    title: "Full-Stack Development",
     icon: web,
+    description: "Production-ready web apps with React, Next.js and Node.js.",
   },
   {
-    title: "React Developer",
-    icon: mobile,
-  },
-  {
-    title: "Backend Developer",
-    icon: backend,
-  },
-  {
-    title: "Content Creator",
+    title: "AI & Automation",
     icon: creator,
+    description: "AI chat and calling agents, agentic workflows and integrations.",
+  },
+  {
+    title: "Backend & APIs",
+    icon: backend,
+    description: "Scalable Node.js, Express and Django services with secure auth.",
+  },
+  {
+    title: "Cloud & E-commerce",
+    icon: mobile,
+    description: "AWS/VPS deployment, Shopify Liquid and WordPress builds.",
   },
 ];
 
-const technologies = [
-  {
-    name: "HTML 5",
-    icon: html,
-  },
-  {
-    name: "CSS 3",
-    icon: css,
-  },
-  {
-    name: "JavaScript",
-    icon: javascript,
-  },
-  {
-    name: "TypeScript",
-    icon: typescript,
-  },
-  {
-    name: "React JS",
-    icon: reactjs,
-  },
-  {
-    name: "Redux Toolkit",
-    icon: redux,
-  },
-  {
-    name: "Tailwind CSS",
-    icon: tailwind,
-  },
-  {
-    name: "Node JS",
-    icon: nodejs,
-  },
-  {
-    name: "MongoDB",
-    icon: mongodb,
-  },
-  {
-    name: "Three JS",
-    icon: threejs,
-  },
-  {
-    name: "git",
-    icon: git,
-  },
-  {
-    name: "figma",
-    icon: figma,
-  },
-  {
-    name: "docker",
-    icon: docker,
-  },
+export const stats = [
+  { value: "2.5+", label: "Years experience" },
+  { value: "8", label: "Teams & companies" },
+  { value: "20+", label: "Shipped products" },
+  { value: "2", label: "Hackathon awards" },
 ];
 
-const experiences = [
+export const technologies = [
+  { name: "HTML5", icon: html, group: "Frontend" },
+  { name: "CSS3", icon: css, group: "Frontend" },
+  { name: "JavaScript", icon: javascript, group: "Frontend" },
+  { name: "TypeScript", icon: typescript, group: "Frontend" },
+  { name: "React", icon: reactjs, group: "Frontend" },
+  { name: "Next.js", icon: null, group: "Frontend" },
+  { name: "Redux Toolkit", icon: redux, group: "Frontend" },
+  { name: "Tailwind CSS", icon: tailwind, group: "Frontend" },
+  { name: "Bootstrap", icon: null, group: "Frontend" },
+  { name: "Three.js", icon: threejs, group: "Frontend" },
+  { name: "Node.js", icon: nodejs, group: "Backend" },
+  { name: "Express.js", icon: null, group: "Backend" },
+  { name: "Python", icon: null, group: "Backend" },
+  { name: "Django", icon: null, group: "Backend" },
+  { name: "PHP", icon: null, group: "Backend" },
+  { name: "REST APIs", icon: null, group: "Backend" },
+  { name: "MongoDB", icon: mongodb, group: "Data & CMS" },
+  { name: "Shopify (Liquid)", icon: shopify, group: "Data & CMS" },
+  { name: "WordPress", icon: null, group: "Data & CMS" },
+  { name: "Elementor", icon: null, group: "Data & CMS" },
+  { name: "AWS", icon: null, group: "Cloud & Tools" },
+  { name: "VPS & cPanel", icon: null, group: "Cloud & Tools" },
+  { name: "Docker", icon: docker, group: "Cloud & Tools" },
+  { name: "Git & GitHub", icon: git, group: "Cloud & Tools" },
+  { name: "Figma", icon: figma, group: "Cloud & Tools" },
+  { name: "Agentic AI", icon: null, group: "Cloud & Tools" },
+];
+
+export const experiences = [
+  {
+    title: "Artificial Intelligence Engineer",
+    company_name: "digixite",
+    date: "Sep 2026 – Present",
+    location: "Lahore, Pakistan",
+    initials: "DX",
+    iconBg: "#2b1a5e",
+    points: [
+      "Building AI-powered features and agentic workflows for business software products.",
+      "Integrating LLM chat and calling agents into existing CRM and booking platforms.",
+      "Taking AI features end-to-end: prompt design, API integration, testing and deployment.",
+    ],
+  },
+  {
+    title: "Senior Web Application Developer",
+    company_name: "digixite",
+    date: "Jan 2025 – Oct 2026",
+    location: "Lahore, Pakistan",
+    initials: "DX",
+    iconBg: "#1d3b73",
+    points: [
+      "Developed CRM dashboards with super-admin controls, sales reports and a mail service.",
+      "Implemented customer account creation, subscriptions and role-based access.",
+      "Integrated Google Workspace and Google Calendar to power a booking system.",
+      "Built an augmented-reality game for learning basic driving rules, plus a scored quiz system.",
+    ],
+  },
+  {
+    title: "Shopify Theme Developer",
+    company_name: "Digital Creatix",
+    date: "Oct 2025 – Feb 2026",
+    location: "Lahore, Pakistan",
+    initials: "DC",
+    iconBg: "#0f3f3a",
+    points: [
+      "Built per-product custom size charts with metafields and Liquid — no paid apps required.",
+      "Created custom 3D product UI and extended product forms beyond standard variants.",
+      "Optimised theme code and assets to pass Core Web Vitals and improve page speed.",
+      "Developed a small WordPress plugin using ACF fields for a companion site.",
+    ],
+  },
+  {
+    title: "Backend Application Developer",
+    company_name: "Business Venturez",
+    date: "May 2025 – Jul 2025",
+    location: "Lahore, Pakistan",
+    initials: "BV",
+    iconBg: "#3a1d2e",
+    points: [
+      "Added drag-and-drop scheduling to a booking calendar and real-time booking updates for staff and customers.",
+      "Integrated an AI chat agent for customers/staff and an AI calling agent for taking bookings.",
+      "Implemented staff, admin and customer access management.",
+      "Built yearly sales reports, salary management and attendance-based salary detection.",
+    ],
+  },
+  {
+    title: "Associate Application Developer",
+    company_name: "Business Venturez",
+    date: "Jul 2024 – Apr 2025",
+    location: "Lahore, Pakistan",
+    initials: "BV",
+    iconBg: "#3a1d2e",
+    points: [
+      "Maintained and extended a multi-role booking and business management platform.",
+      "Implemented admin and customer flows, reporting and access-control improvements.",
+      "Worked with the product team to ship features that reduced manual back-office work.",
+    ],
+  },
+  {
+    title: "Node.js Developer",
+    company_name: "digixite",
+    date: "Apr 2024 – Jun 2026",
+    location: "Lahore, Pakistan",
+    initials: "DX",
+    iconBg: "#1d3b73",
+    points: [
+      "Built and maintained Node.js backends and REST APIs for ERP and interactive software products.",
+      "Integrated third-party services and optimised server-side performance and database queries.",
+      "Collaborated with frontend developers to deliver reliable, well-documented endpoints.",
+    ],
+  },
+  {
+    title: "Application Developer",
+    company_name: "Techman Ventures",
+    date: "Jan 2024 – Dec 2024",
+    location: "Madison, Wisconsin, USA (Remote)",
+    initials: "TV",
+    iconBg: "#243b55",
+    points: [
+      "Built responsive interfaces with Tailwind CSS for dating, booking, ordering and video-streaming products.",
+      "Implemented real-time communication, broadcasting and protected link sharing.",
+      "Added secure authentication and solved scalability and performance bottlenecks.",
+      "Shipped user matching, profile management, carts, reservations and media delivery features.",
+    ],
+  },
   {
     title: "WordPress Developer",
-    company_name: "Petrolead",
-    icon: starbucks,
-    iconBg: "#383E56",
-    date: "March 2022 - April 2023",
+    company_name: "PetroLead Technologies",
+    date: "Jan 2022 – Dec 2023",
+    location: "Muscat, Oman (Remote)",
+    initials: "PL",
+    iconBg: "#2d2a12",
     points: [
-      "Developing and maintaining web applications using React.js and other related technologies.",
-      "Collaborating with cross-functional teams including designers, product managers, and other developers to create high-quality products.",
-      "Implementing responsive design and ensuring cross-browser compatibility.",
-      "Participating in code reviews and providing constructive feedback to other developers.",
-    ],
-  },
-  {
-    title: "React Developer",
-    company_name: "Business Ventures",
-    icon: tesla,
-    iconBg: "#E6DEDD",
-    date: "Jan 2023 - Feb 2024",
-    points: [
-      "Developing and maintaining web applications using React.js and other related technologies.",
-      "Collaborating with cross-functional teams including designers, product managers, and other developers to create high-quality products.",
-      "Implementing responsive design and ensuring cross-browser compatibility.",
-      "Participating in code reviews and providing constructive feedback to other developers.",
-    ],
-  },
-  {
-    title: "Web Developer",
-    company_name: "Digixcite",
-    icon: shopify,
-    iconBg: "#383E56",
-    date: "Jan 2024 - Jan 2025",
-    points: [
-      "Developing and maintaining web applications using React.js and other related technologies.",
-      "Collaborating with cross-functional teams including designers, product managers, and other developers to create high-quality products.",
-      "Implementing responsive design and ensuring cross-browser compatibility.",
-      "Participating in code reviews and providing constructive feedback to other developers.",
-    ],
-  },
-  {
-    title: "Full stack Developer",
-    company_name: "Techinovates",
-    icon: meta,
-    iconBg: "#E6DEDD",
-    date: "Jan 2025 - Present",
-    points: [
-      "Developing and maintaining web applications using React.js and other related technologies.",
-      "Collaborating with cross-functional teams including designers, product managers, and other developers to create high-quality products.",
-      "Implementing responsive design and ensuring cross-browser compatibility.",
-      "Participating in code reviews and providing constructive feedback to other developers.",
+      "Designed and developed a lead-generation website for a petroleum company.",
+      "Built a custom hero section with Slider Revolution and ACF-powered about/services/projects sections.",
+      "Implemented contact forms and on-page SEO to generate qualified inbound leads.",
     ],
   },
 ];
 
-const testimonials = [
+export const projects = [
   {
-    testimonial:
-      "I thought it was impossible to make a website as beautiful as our product, but Rick proved me wrong.",
-    name: "Sara Lee",
-    designation: "CFO",
-    company: "Acme Co",
-    image: "https://randomuser.me/api/portraits/women/4.jpg",
+    name: "Real Estate Property Marketplace",
+    category: "Full-stack platform",
+    description:
+      "A property buying and selling platform with built-in price and deal calculators, verified reviews and ratings, real-time buyer–agent chat and an AI chatbot. Viewing appointments are handled through a calendar booking flow and a full admin panel manages listings and disputes.",
+    tags: ["React", "Node.js", "MongoDB", "Tailwind"],
+    highlights: ["Live chat + AI chatbot", "Calendar booking", "Admin control panel"],
+    cover: "from-[#1d3b73] via-[#2f80ed] to-[#56ccf2]",
+    initials: "RE",
+    note: "Personal project",
+    year: "2025",
+    link: null,
   },
   {
-    testimonial:
-      "I've never met a web developer who truly cares about their clients' success like Rick does.",
-    name: "Chris Brown",
-    designation: "COO",
-    company: "DEF Corp",
-    image: "https://randomuser.me/api/portraits/men/5.jpg",
+    name: "Matrimonial Platform & CRM",
+    category: "Full-stack platform",
+    description:
+      "A matrimonial web application with multi-user profile creation, account management and a dedicated admin CRM for reviewing entries and platform activity. Includes a real-time chatbot and live chat to support member communication.",
+    tags: ["React", "Node.js", "MongoDB", "Socket.io"],
+    highlights: ["Multi-user accounts", "Admin CRM", "Real-time chat"],
+    cover: "from-[#3a1d5e] via-[#7c3aed] to-[#c084fc]",
+    initials: "MP",
+    note: "Personal project",
+    year: "2025",
+    link: null,
   },
   {
-    testimonial:
-      "After Rick optimized our website, our traffic increased by 50%. We can't thank them enough!",
-    name: "Lisa Wang",
-    designation: "CTO",
-    company: "456 Enterprises",
-    image: "https://randomuser.me/api/portraits/women/6.jpg",
+    name: "CRM & ERP Dashboard",
+    category: "Client product · digixite",
+    description:
+      "An ERP/CRM suite used by growing businesses to manage sales, customers and subscriptions. Built super-admin controls, automated sales reports, transactional mail, and Google Workspace and Calendar integrations for booking.",
+    tags: ["React", "Node.js", "Google APIs", "MongoDB"],
+    highlights: ["Super-admin controls", "Sales reporting", "Google Calendar sync"],
+    cover: "from-[#0f3f3a] via-[#0d9488] to-[#5eead4]",
+    initials: "CRM",
+    note: "Client project",
+    year: "2025",
+    link: null,
+  },
+  {
+    name: "AI Booking & Staff Management",
+    category: "Client product · Business Venturez",
+    description:
+      "A booking platform extended with drag-and-drop calendar scheduling, an AI chat agent for customers and staff, and an AI calling agent that takes bookings. Adds role-based access, yearly sales reporting, attendance tracking and salary management.",
+    tags: ["Node.js", "AI Agents", "REST APIs", "RBAC"],
+    highlights: ["AI calling agent", "Drag-and-drop calendar", "Attendance-based payroll"],
+    cover: "from-[#3b1f12] via-[#ea580c] to-[#fbbf24]",
+    initials: "AI",
+    note: "Client project",
+    year: "2025",
+    link: null,
+  },
+  {
+    name: "Online Learning Platform",
+    category: "Full-stack product",
+    description:
+      "A course marketplace that replicates the core Udemy experience: course catalogue, instructor and learner accounts, lesson delivery, enrolment flow and progress tracking, plus an admin area for managing content.",
+    tags: ["React", "Node.js", "MongoDB", "Tailwind"],
+    highlights: ["Course catalogue", "Instructor dashboards", "Progress tracking"],
+    cover: "from-[#1f1d4a] via-[#4338ca] to-[#818cf8]",
+    initials: "LP",
+    note: "Personal project",
+    year: "2024",
+    link: null,
+  },
+  {
+    name: "Diet & BMI Prediction Tool",
+    category: "Data & ML",
+    description:
+      "An interactive health tool with a JavaScript front end and Django backend. Cleans and prepares health data with Python data-processing libraries, predicts BMI and diet recommendations, and visualises results with charts for a clear user experience.",
+    tags: ["Django", "Python", "JavaScript", "Data Science"],
+    highlights: ["BMI prediction", "Diet recommendations", "Chart visualisation"],
+    cover: "from-[#3a1d2e] via-[#db2777] to-[#f9a8d4]",
+    initials: "BMI",
+    note: "Academic project",
+    year: "2024",
+    link: null,
+  },
+
+  {
+    name: "Developer Portfolio",
+    category: "Portfolio & Web App",
+    description:
+      "My own portfolio site — the one you are viewing. Built with React, Three.js and Tailwind CSS, with a deferred 3D hero, lazy-loaded scenes, compressed assets and SEO-friendly metadata.",
+    tags: ["React", "Three.js", "Tailwind", "Vite"],
+    highlights: ["Deferred 3D scenes", "Lazy loading", "SEO optimised"],
+    cover: "from-[#1d3b73] via-[#6d28d9] to-[#c4b5fd]",
+    initials: "PF",
+    year: "2026",
+    image: "/projects/portfolio.jpg",
+    link: "https://usmandeveloper.lovestoblog.com/",
+    note: "Live site",
+  },
+  {
+    name: "Daya's Language Corner",
+    category: "Blog / WordPress",
+    description:
+      "A WordPress blog focused on language learning, with a clean reading experience, SEO-friendly post structure and a responsive layout across devices.",
+    tags: ["WordPress", "PHP", "SEO", "Responsive"],
+    highlights: ["Custom theme", "SEO optimised", "Mobile first"],
+    cover: "from-[#0f3f3a] via-[#14b8a6] to-[#a7f3d0]",
+    initials: "DL",
+    year: "2025",
+    image: "/projects/dayaslanguagecorner.jpg",
+    link: "https://dayaslanguagecorner.blog/",
+    note: "Live site",
+  },
+  {
+    name: "Dar Du Jour",
+    category: "E-commerce / Shopify",
+    description:
+      "A Shopify storefront with a custom Liquid theme, product pages, cart and checkout. Optimised for Core Web Vitals and built around a strong visual brand.",
+    tags: ["Shopify", "Liquid", "JavaScript", "Tailwind"],
+    highlights: ["Custom Liquid theme", "Optimised performance", "Responsive storefront"],
+    cover: "from-[#3a1d2e] via-[#be185d] to-[#f9a8d4]",
+    initials: "DD",
+    year: "2025",
+    image: "/projects/dardujour.jpg",
+    link: "https://dardujour.com/",
+    note: "Live site",
+  },
+  {
+    name: "Eat Or Ice",
+    category: "E-commerce & Retail",
+    description:
+      "A food and retail e-commerce website with a modern, conversion-focused layout, product catalogue and an easy ordering flow for customers.",
+    tags: ["Shopify", "Liquid", "CSS", "E-commerce"],
+    highlights: ["Conversion-focused UI", "Product catalogue", "Mobile responsive"],
+    cover: "from-[#3b1f12] via-[#ea580c] to-[#fbbf24]",
+    initials: "EI",
+    year: "2025",
+    image: "/projects/eatorice.jpg",
+    link: "https://eatorice.com/",
+    note: "Live site",
+  },
+  {
+    name: "PetroLead Technologies",
+    category: "Corporate & Lead Gen",
+    description:
+      "A lead-generation website for a petroleum company, with a custom hero section, ACF-powered about/services/projects sections, contact forms and on-page SEO.",
+    tags: ["WordPress", "ACF", "Slider Revolution", "SEO"],
+    highlights: ["Custom hero section", "ACF content", "Lead capture forms"],
+    cover: "from-[#2d2a12] via-[#ca8a04] to-[#fde68a]",
+    initials: "PL",
+    year: "2023",
+    image: "/projects/petrolead.jpg",
+    link: "https://petrolead-me.com/",
+    note: "Live site",
+  },
+  {
+    name: "CosmoSource",
+    category: "B2B Platform",
+    description:
+      "A B2B-focused website for a sourcing and supply company, with a clean corporate design, product/service listings and a contact-driven lead flow.",
+    tags: ["WordPress", "PHP", "CSS", "Responsive"],
+    highlights: ["Corporate design", "Product listings", "Lead capture"],
+    cover: "from-[#1f1d4a] via-[#4338ca] to-[#a5b4fc]",
+    initials: "CS",
+    year: "2025",
+    image: "/projects/cosmosource.jpg",
+    link: "https://cosmosource.ae/",
+    note: "Live site",
+  },
+  {
+    name: "The Roofing Pros CA",
+    category: "Service Website",
+    description:
+      "A local service business website for a roofing company, with service pages, a quote request flow and a mobile-friendly layout.",
+    tags: ["WordPress", "PHP", "CSS", "Responsive"],
+    highlights: ["Service pages", "Quote requests", "Mobile friendly"],
+    cover: "from-[#243b55] via-[#0ea5e9] to-[#7dd3fc]",
+    initials: "RP",
+    year: "2024",
+    image: "/projects/roofingprosca.jpg",
+    link: "http://www.theroofingprosca.com",
+    note: "Live site",
+  },
+  {
+    name: "Digixite Agency",
+    category: "Software & AI Agency",
+    description:
+      "The corporate website of Digixite, a software and AI agency, showcasing services, portfolio and contact channels with a modern, performance-focused build.",
+    tags: ["React", "Next.js", "Tailwind", "SEO"],
+    highlights: ["Agency showcase", "Service pages", "Performance focused"],
+    cover: "from-[#1d3b73] via-[#2563eb] to-[#60a5fa]",
+    initials: "DX",
+    year: "2025",
+    image: "/projects/digixite.jpg",
+    link: "https://digixite.com/",
+    note: "Live site",
+  },
+  {
+    name: "Reet Fashion",
+    category: "E-commerce / Apparel",
+    description:
+      "An apparel e-commerce store with a clean product catalogue, filtering, cart and checkout, built for a smooth mobile shopping experience.",
+    tags: ["Shopify", "Liquid", "JavaScript", "E-commerce"],
+    highlights: ["Product catalogue", "Cart & checkout", "Mobile shopping"],
+    cover: "from-[#3a1d5e] via-[#9333ea] to-[#d8b4fe]",
+    initials: "RT",
+    year: "2025",
+    image: "/projects/reet.jpg",
+    link: "https://reet.com.pk/",
+    note: "Live site",
+  },
+  {
+    name: "Preet Pret",
+    category: "E-commerce / Fashion",
+    description:
+      "A fashion e-commerce storefront with a polished product grid, size and colour variants, and a streamlined checkout experience.",
+    tags: ["Shopify", "Liquid", "CSS", "E-commerce"],
+    highlights: ["Variant selection", "Streamlined checkout", "Responsive design"],
+    cover: "from-[#3a1d2e] via-[#db2777] to-[#f9a8d4]",
+    initials: "PP",
+    year: "2025",
+    image: "/projects/preetpret.jpg",
+    link: "https://preetpret.pk/",
+    note: "Live site",
+  },
+  {
+    name: "DuJour Beauty",
+    category: "Media & Beauty",
+    description:
+      "A beauty-focused media and content site with a magazine-style layout, featured articles and a visually rich, brand-led design.",
+    tags: ["WordPress", "PHP", "CSS", "Responsive"],
+    highlights: ["Magazine layout", "Featured articles", "Brand-led design"],
+    cover: "from-[#0f3f3a] via-[#14b8a6] to-[#5eead4]",
+    initials: "DJ",
+    year: "2025",
+    image: "/projects/dujourbeauty.jpg",
+    link: "https://dujour.com/beauty/",
+    note: "Live site",
+  },
+  {
+    name: "FAH Jewelry",
+    category: "E-commerce / Jewelry",
+    description:
+      "A jewellery e-commerce store with high-quality product imagery, variant selection and a secure, conversion-optimised checkout.",
+    tags: ["Shopify", "Liquid", "JavaScript", "E-commerce"],
+    highlights: ["Product imagery", "Variant selection", "Secure checkout"],
+    cover: "from-[#2d2a12] via-[#ca8a04] to-[#fde68a]",
+    initials: "FJ",
+    year: "2025",
+    image: "/projects/fahjewelry.jpg",
+    link: "https://fahjewelry.com/",
+    note: "Live site",
+  },
+  {
+    name: "FAH Beauty",
+    category: "E-commerce / Cosmetics",
+    description:
+      "A cosmetics e-commerce storefront with a clean, beauty-led design, product filtering and a smooth mobile checkout flow.",
+    tags: ["Shopify", "Liquid", "CSS", "E-commerce"],
+    highlights: ["Beauty-led design", "Product filtering", "Mobile checkout"],
+    cover: "from-[#3a1d2e] via-[#ec4899] to-[#f9a8d4]",
+    initials: "FB",
+    year: "2025",
+    image: "/projects/fahbeauty.jpg",
+    link: "https://fahbeauty.com/",
+    note: "Live site",
+  },
+  {
+    name: "My BBA Skincare",
+    category: "E-commerce / Skincare",
+    description:
+      "A skincare e-commerce store with ingredient-focused product pages, reviews and a subscription-friendly checkout.",
+    tags: ["Shopify", "Liquid", "JavaScript", "E-commerce"],
+    highlights: ["Ingredient-focused pages", "Reviews", "Subscription ready"],
+    cover: "from-[#0f3f3a] via-[#2dd4bf] to-[#ccfbf1]",
+    initials: "BS",
+    year: "2025",
+    image: "/projects/mybbaskincare.jpg",
+    link: "https://mybbaskincare.com/",
+    note: "Live site",
+  },
+  {
+    name: "Suleman Hameed",
+    category: "Personal Brand",
+    description:
+      "A personal brand and portfolio website with a clean, professional layout showcasing work, services and contact channels.",
+    tags: ["WordPress", "PHP", "CSS", "Responsive"],
+    highlights: ["Personal brand", "Service showcase", "Contact channels"],
+    cover: "from-[#1f1d4a] via-[#6366f1] to-[#c7d2fe]",
+    initials: "SH",
+    year: "2025",
+    image: "/projects/sulemanhameed.jpg",
+    link: "https://sulemanhameed.com/",
+    note: "Live site",
+  },
+  {
+    name: "Be Beauty Global",
+    category: "E-commerce / Beauty",
+    description:
+      "A global beauty e-commerce storefront with multi-region support, product filtering and a polished, brand-led shopping experience.",
+    tags: ["Shopify", "Liquid", "JavaScript", "E-commerce"],
+    highlights: ["Multi-region support", "Product filtering", "Brand-led UX"],
+    cover: "from-[#3a1d2e] via-[#f43f5e] to-[#fecdd3]",
+    initials: "BB",
+    year: "2025",
+    image: "/projects/bebeautyglobal.jpg",
+    link: "https://bebeautyglobal.com/",
+    note: "Live site",
+  },
+  {
+    name: "Wedding Wish Centre",
+    category: "Matrimonial & Booking",
+    description:
+      "A matrimonial and wedding services platform with member profiles, search, booking flows and an admin area for managing listings.",
+    tags: ["WordPress", "PHP", "MySQL", "Booking"],
+    highlights: ["Member profiles", "Booking flows", "Admin panel"],
+    cover: "from-[#3a1d2e] via-[#e11d48] to-[#fda4af]",
+    initials: "WW",
+    year: "2025",
+    image: "/projects/weddingwish.jpg",
+    link: "https://weddingwishmarriagecentre.com/",
+    note: "Live site",
   },
 ];
 
-const projects = [
+export const achievements = [
   {
-    name: "Car Rent",
+    id: "hackathon",
+    icon: "trophy",
+    title: 'Winner — "Vibe Coding" Hackathon',
+    meta: "TechSimaals Software Community",
     description:
-      "Web-based platform that allows users to search, book, and manage car rentals from various providers, providing a convenient and efficient solution for transportation needs.",
-    tags: [
-      {
-        name: "react",
-        color: "blue-text-gradient",
-      },
-      {
-        name: "mongodb",
-        color: "green-text-gradient",
-      },
-      {
-        name: "tailwind",
-        color: "pink-text-gradient",
-      },
-    ],
-    image: carrent,
-    source_code_link: "https://github.com/",
+      "Took first place in a community hackathon by shipping a working product within the event timeframe.",
   },
   {
-    name: "Job IT",
+    id: "speed-programming",
+    icon: "code",
+    title: "Speed Programming Hackathon",
+    meta: "University of South Asia",
     description:
-      "Web application that enables users to search for job openings, view estimated salary ranges for positions, and locate available jobs based on their current location.",
-    tags: [
-      {
-        name: "react",
-        color: "blue-text-gradient",
-      },
-      {
-        name: "restapi",
-        color: "green-text-gradient",
-      },
-      {
-        name: "scss",
-        color: "pink-text-gradient",
-      },
-    ],
-    image: jobit,
-    source_code_link: "https://github.com/",
+      "Recognised for outstanding performance in a university-level competitive programming event.",
   },
   {
-    name: "Trip Guide",
+    id: "leadership",
+    icon: "users",
+    title: "Event Manager & Gaming Head",
+    meta: "Soft Tech Society, University of South Asia",
     description:
-      "A comprehensive travel booking platform that allows users to book flights, hotels, and rental cars, and offers curated recommendations for popular destinations.",
-    tags: [
-      {
-        name: "nextjs",
-        color: "blue-text-gradient",
-      },
-      {
-        name: "supabase",
-        color: "green-text-gradient",
-      },
-      {
-        name: "css",
-        color: "pink-text-gradient",
-      },
-    ],
-    image: tripguide,
-    source_code_link: "https://github.com/",
+      "Planned technical events and competitions, and led the gaming division including e-sports events and participant engagement.",
+  },
+  {
+    id: "volunteer",
+    icon: "shield",
+    title: "IT Support Volunteer",
+    meta: "Lahore High Court — Biometric Election Process",
+    description:
+      "Provided on-site IT and biometric verification support for two semesters, troubleshooting devices to keep voter verification running smoothly.",
+  },
+  {
+    id: "education",
+    icon: "cap",
+    title: "BS Computer Science",
+    meta: "University of South Asia · 2023 – 2027",
+    description:
+      "Currently in the 7th semester. Coursework includes OOP, interactive JavaScript, Django backend development, data science and artificial intelligence.",
+  },
+  {
+    id: "community",
+    icon: "spark",
+    title: "Dev Weekends Mentorship",
+    meta: "Mentorship community member",
+    description:
+      "Participate in structured mentorship sessions, peer accountability and guided learning to keep improving problem-solving and delivery habits.",
   },
 ];
 
-export { services, technologies, experiences, testimonials, projects };
+export { services };

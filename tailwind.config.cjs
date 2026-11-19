@@ -15,11 +15,15 @@ module.exports = {
       boxShadow: {
         card: "0px 35px 120px -15px #211e35",
       },
+      fontFamily: {
+        sans: ["Poppins", "ui-sans-serif", "system-ui", "sans-serif"],
+        poppins: ["Poppins", "sans-serif"],
+      },
       screens: {
         xs: "450px",
       },
       backgroundImage: {
-        "hero-pattern": "url('/src/assets/herobg.png')",
+        "hero-pattern": "url('/src/assets/herobg.jpg')",
       },
     },
   },

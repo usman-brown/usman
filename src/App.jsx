@@ -1,6 +1,18 @@
 import { BrowserRouter } from "react-router-dom";
 
-import { About, Contact, Experience, Feedbacks, Hero, Navbar, Tech, Works, StarsCanvas } from "./components";
+import {
+  About,
+  Achievements,
+  Contact,
+  Experience,
+  Footer,
+  Hero,
+  Navbar,
+  CanvasGate,
+  StarsCanvas,
+  Tech,
+  Works,
+} from "./components";
 
 const App = () => {
   return (
@@ -10,18 +22,26 @@ const App = () => {
           <Navbar />
           <Hero />
         </div>
-        <About />
-        <Experience />
-        <Tech />
-        <Works />
-        <Feedbacks />
-        <div className='relative z-0'>
-          <Contact />
-          <StarsCanvas />
-        </div>
+        <main>
+          <About />
+          <Experience />
+          <Tech />
+          <Works />
+          <Achievements />
+          <div className='relative z-0'>
+            <Contact />
+            <CanvasGate
+              className='absolute inset-0 z-[-1]'
+              rootMargin='400px'
+            >
+              <StarsCanvas />
+            </CanvasGate>
+          </div>
+        </main>
+        <Footer />
       </div>
     </BrowserRouter>
   );
-}
+};
 
 export default App;

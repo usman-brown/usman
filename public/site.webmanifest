@@ -1,0 +1,17 @@
+{
+  "name": "Muhammad Usman — Full-Stack Developer & AI Engineer",
+  "short_name": "Muhammad Usman",
+  "description": "Portfolio of Muhammad Usman, a full-stack developer and AI engineer building fast, scalable web products and AI-powered automations.",
+  "start_url": "/",
+  "display": "standalone",
+  "background_color": "#050816",
+  "theme_color": "#050816",
+  "icons": [
+    {
+      "src": "/logo.svg",
+      "sizes": "any",
+      "type": "image/svg+xml",
+      "purpose": "any"
+    }
+  ]
+}
